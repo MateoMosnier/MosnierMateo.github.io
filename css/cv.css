@@ -5,14 +5,14 @@ body { padding-top: 50px; }
 ****************************************/
 #cv-entete { margin-top: -45px; width: 100%;}
 #cv-photo { width: 172px; height: 172px; border-radius: 50%; overflow: hidden; padding: 5px;
-            background: #eee; display: inline-block; }
+ background: #eee; display: inline-block; }
 #cv-photo img { width: 160px; height: 160px; border-radius: 50%; }
 #cv-intro h1 { margin: 0; padding: 0; font-size: 2.4em; font-weight: 700;
-               letter-spacing: -1px;}
+ letter-spacing: -1px;}
 #cv-intro h1 span { color: rgb(226,0,26); }
 #cv-intro::after { background: url('images/ligne.png'); /* Dossier "images" est un sous-
  dossier de "css" (à créer) */
-                   width: 100%; height: 3px; margin-top: 15px; content: ''; display: block;}
+ width: 100%; height: 3px; margin-top: 15px; content: ''; display: block;}
 
 /****************************************
 * Rubriques
@@ -64,3 +64,38 @@ body { padding-top: 50px; }
 .experience .date { font-size: 1em; opacity: 0.7; }
 .experience .profession { font-size: 1.45em; font-weight: bold; margin-top: -6px; }
 .experience .details { font-size: 1.2em; line-height: 1.5em; }
+/******************************************
+* Me contacter
+******************************************/
+.meContacter { clear: both; }
+.meContacter .details { width: 100%; margin-left: 10px; margin-top: 3px; font-size: 1.5em;
+ font-weight: 700; justify-content: space-between;}
+.contact-icon { filter: grayscale(1); -webkit-filter: grayscale(1);
+ -moz-filter: grayscale(1); -ms-filter: grayscale(1);
+ -o-filter: grayscale(1); height: 32px; width: 32px; margin: 2px 0; }
+.meContacter a, .meContacter a:hover { text-decoration: none; color: black; }
+.meContacter a:hover>img { filter: grayscale(0); -webkit-filter: grayscale(0);
+ -moz-filter: grayscale(0); -ms-filter: grayscale(0);
+ -o-filter: grayscale(0); }
+/******************************************
+* Langues
+******************************************/
+#langues .container { display: flex; flex-direction: row; justify-content: space-between; }
+#langues .langue, #langues .niveau{ font-size: 1.3em; }
+#langues .langue { padding-top: 3px; }
+/******************************************
+* Compétences
+******************************************/
+#competences .container {
+    display: flex; flex-direction: row; justify-content: space-between; }
+   #competences .container .libelle { font-size: 1.3em; }
+   #competences .container .classement {
+    background: scroll transparent url(images/Red-Rating-Stars.png) no-repeat;
+    width: 160px; height: 27px; }
+   #competences .container .classement0 { background-position: 0 -142px; }
+   #competences .container .classement1 { background-position: 0 -112px; }
+   #competences .container .classement2 { background-position: 0 -84px; }
+   #competences .container .classement3 { background-position: 0 -56px; }
+   #competences .container .classement4 { background-position: 0 -28px; }
+   #competences .container .classement5 { background-position: 0 0px; }
+   
